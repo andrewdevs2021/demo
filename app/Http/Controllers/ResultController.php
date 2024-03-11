@@ -10,7 +10,7 @@ class ResultController extends Controller
     public function index($id)
     {
         $data = UserInformation::with([
-            'city', 'country', 'mirrageCountry'
+            'city', 'country', 'marriageCountry'
         ])->find($id);
         return view('result', ['data' => $data]);
     }

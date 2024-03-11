@@ -1,7 +1,7 @@
-<div class="flex">
-    <div class="mx-2">
-        <label for="country">Country</label>
-        <select id="country" class="block rounded border border-gray-700 px-3 py-1"
+<div class="flex space-x-4 mb-2">
+    <div class="w-1/2">
+        <label for="country" class="block text-sm font-medium text-gray-600 mb-1">Country</label>
+        <select id="country" class="block w-full px-3 py-1 border border-gray-700 rounded-md"
             wire:model.live="selectedCountry" autocomplete="false" aria-autocomplete="false">
             <option value="" selected>Select ...</option>
             @foreach ($options as $key => $value)
@@ -10,9 +10,9 @@
         </select>
 
     </div>
-    <div class="mx-2">
-        <label for="city">City</label>
-        <select id="city" class="block rounded border border-gray-700 px-3 py-1"
+    <div class="w-1/2">
+        <label for="city" class="block text-sm font-medium text-gray-600 mb-1">City</label>
+        <select id="city" class="block w-full px-3 py-1 border border-gray-700 rounded-md"
             wire:model.live="selectedCity" autocomplete="false" aria-autocomplete="false">
             <option value="" selected>Select ...</option>
             @foreach ($cities as $key => $value)

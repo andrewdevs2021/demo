@@ -27,7 +27,7 @@ class UserInformation extends Model
         return $this->belongsTo(City::class,'city_id');
     }
 
-    public function mirrageCountry(){
+    public function marriageCountry(){
         return $this->belongsTo(Country::class,'country_of_marriage_id');
     }
 
